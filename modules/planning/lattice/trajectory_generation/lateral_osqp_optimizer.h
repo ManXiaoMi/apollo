@@ -45,6 +45,8 @@ class LateralOSQPOptimizer : public LateralQPOptimizer {
                        std::vector<c_float>* P_data,
                        std::vector<c_int>* P_indices,
                        std::vector<c_int>* P_indptr);
+
+  double delta_s_ = 0.0;
 };
 
 }  // namespace planning
